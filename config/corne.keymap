@@ -13,7 +13,7 @@
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1 &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
 #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3 &ht RSHFT k4
 
-#define WIN 0
+#define DEF 0
 #define RIG 1
 #define LEF 2
 #define TRI 3
@@ -59,7 +59,7 @@
             >;
         };
 
-        lower_layer {
+        right_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -74,7 +74,7 @@
             >;
         };
 
-        raise_layer {
+        left_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
