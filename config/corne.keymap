@@ -59,10 +59,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &trans  &kp N7  &kp N8  &kp N9  &kp PLUS     &kp LC(A)      &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp EQUAL  &none
-&kp LSHIFT  &trans  &kp N4  &kp N5  &kp N6  &kp MINUS    &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT  &trans     &none
-&kp LCTRL   &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT      &kp HOME       &kp PG_DN  &kp PG_UP  &kp END    &trans     &none
-                            &kp N0  &trans  &kp SPACE    &kp BACKSPACE  &trans     &kp RALT
+&kp LC(LEFT_SHIFT)  &kp STAR   &kp N7  &kp N8  &kp N9  &kp PLUS     &kp LC(F)      &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp EQUAL  &none
+&kp LSHIFT          &kp SLASH  &kp N4  &kp N5  &kp N6  &kp MINUS    &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT  &trans     &none
+&kp LCTRL           &kp N0     &kp N1  &kp N2  &kp N3  &kp DOT      &kp HOME       &kp PG_DN  &kp PG_UP  &kp END    &trans     &none
+                                       &trans  &trans  &kp SPACE    &kp BACKSPACE  &trans     &kp RALT
             >;
         };
 
