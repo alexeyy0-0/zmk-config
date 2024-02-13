@@ -63,10 +63,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LC(Z) ESC  &mt GRAVE Q  &kp W  &kp E         &kp R        &kp T        &kp Y          &kp U        &kp I        &kp O    &kp P          &mt RBKT LBKT
-&kp LGUI       &kp A        &kp S  &kp D         &kp F        &kp G        &kp H          &mt RSHFT J  &kp K        &kp L    &kp SEMICOLON  &kp SQT
-&kp LCTRL      &kp Z        &kp X  &kp C         &kp V        &kp B        &kp N          &kp M        &kp COMMA    &kp DOT  &kp FSLH       &tog 2
-                                   &kp LEFT_ALT  &lt 1 SPACE  &lt 3 TAB    &kp BACKSPACE  &lt 2 DEL    &lt 5 ENTER
+&mt LC(Z) ESC  &mt GRAVE Q  &kp W  &kp E         &kp R      &kp T          &kp Y          &kp U        &kp I        &kp O    &kp P          &mt RBKT LBKT
+&kp LGUI       &kp A        &kp S  &kp D         &kp F      &kp G          &kp H          &mt RSHFT J  &kp K        &kp L    &kp SEMICOLON  &kp SQT
+&kp LCTRL      &kp Z        &kp X  &kp C         &kp V      &kp B          &kp N          &kp M        &kp COMMA    &kp DOT  &kp FSLH       &tog 2
+                                   &kp LEFT_ALT  &lt 1 TAB  &lt 3 SPACE    &kp BACKSPACE  &lt 2 DEL    &lt 5 ENTER
             >;
         };
 
@@ -132,8 +132,8 @@
         compatible = "zmk,conditional-layers";
 
         layer_3 {
-            if-layers = <2>;
-            then-layer = <1>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
