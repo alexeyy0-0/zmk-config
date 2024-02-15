@@ -78,9 +78,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LC(LEFT_SHIFT)  &kp STAR  &kp N7  &kp N8  &kp N9  &kp PLUS            &kp LC(F)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &none  &none
+&kp LC(LEFT_SHIFT)  &kp STAR  &kp N7  &kp N8  &kp N9  &kp PLUS            &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none  &none
 &kp LSHIFT          &kp FSLH  &kp N4  &kp N5  &kp N6  &kp MINUS           &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none  &none
-&kp LCTRL           &kp N0    &kp N1  &kp N2  &kp N3  &mt LS(N6) SLASH    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none  &tog 1
+&kp LCTRL           &kp N0    &kp N1  &kp N2  &kp N3  &mt LS(N6) SLASH    &kp LC(F)  &kp LC(C)  &kp LC(V)  &kp LC(X)  &none  &tog 1
                                       &none   &trans  &trans              &trans     &trans     &trans
             >;
         };
@@ -93,10 +93,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &trans
-                             &trans    &trans    &trans       &trans     &trans     &trans
+&kp ESC    &trans                 &kp AMPERSAND  &kp STAR      &kp LEFT_PARENTHESIS  &trans     &trans     &trans            &trans                 &trans                &trans          &kp BSPC
+&kp LCTRL  &trans                 &kp DOLLAR     &kp PERCENT   &kp LCTRL             &trans     &kp MINUS  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp LESS_THAN   &trans
+&kp LSHFT  &kp RIGHT_PARENTHESIS  &kp EXCL       &kp AT        &kp HASH              &trans     &kp UNDER  &kp RIGHT_BRACE   &kp RIGHT_BRACKET      &kp LEFT_BRACKET      &kp LEFT_BRACE  &trans
+                                                 &kp QUESTION  &kp COMMA             &kp DOT    &trans     &trans            &trans
             >;
         };
 
