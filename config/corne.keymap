@@ -78,10 +78,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LC(LEFT_SHIFT)  &kp STAR  &kp N7  &kp N8  &kp N9  &kp PLUS            &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none  &none
-&kp LSHIFT          &kp FSLH  &kp N4  &kp N5  &kp N6  &kp MINUS           &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none  &none
-&kp LCTRL           &kp N0    &kp N1  &kp N2  &kp N3  &mt LS(N6) SLASH    &kp LC(F)  &kp LC(C)  &kp LC(V)  &kp LC(X)  &none  &tog 1
-                                      &none   &trans  &trans              &trans     &trans     &trans
+&kp LC(LEFT_SHIFT)  &kp STAR           &kp N7  &kp N8  &kp N9  &kp PLUS                &kp HOME      &kp PG_DN     &kp PG_UP   &kp END        &kp LC(X)  &none
+&kp LSHIFT          &kp LS(BACKSLASH)  &kp N4  &kp N5  &kp N6  &mt UNDERSCORE MINUS    &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT      &kp LC(C)  &none
+&kp LCTRL           &kp N0             &kp N1  &kp N2  &kp N3  &mt LS(N6) SLASH        &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp LC(RIGHT)  &kp LC(V)  &tog 1
+                                               &none   &trans  &trans                  &trans        &trans        &trans
             >;
         };
 
@@ -93,10 +93,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC    &trans                 &kp AMPERSAND  &kp STAR      &kp LEFT_PARENTHESIS  &trans     &trans     &trans            &trans                 &trans                &trans          &kp BSPC
-&kp LCTRL  &trans                 &kp DOLLAR     &kp PERCENT   &kp LCTRL             &trans     &kp MINUS  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp LESS_THAN   &trans
-&kp LSHFT  &kp RIGHT_PARENTHESIS  &kp EXCL       &kp AT        &kp HASH              &trans     &kp UNDER  &kp RIGHT_BRACE   &kp RIGHT_BRACKET      &kp LEFT_BRACKET      &kp LEFT_BRACE  &trans
-                                                 &kp QUESTION  &kp COMMA             &kp DOT    &trans     &trans            &trans
+&kp ESC    &none                  &kp AMPERSAND  &kp STAR      &kp LEFT_PARENTHESIS  &none      &none   &trans             &trans                 &trans                &trans            &trans
+&kp LCTRL  &trans                 &kp DOLLAR     &kp PERCENT   &kp LCTRL             &none      &none   &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &trans
+&kp LSHFT  &kp RIGHT_PARENTHESIS  &kp EXCL       &kp AT        &kp HASH              &none      &none   &kp GREATER_THAN   &kp RIGHT_BRACE        &kp LEFT_BRACE        &kp LESS_THAN     &trans
+                                                 &kp QUESTION  &kp COMMA             &kp DOT    &trans  &trans             &trans
             >;
         };
 
@@ -111,10 +111,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp F5      &kp LC(LS(T))  &kp LC(T)         &kp LC(W)         &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans         &kp LC(PG_UP)     &kp LC(PG_DN)     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(F5)  &kp LC(LS(P))  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                   &trans            &trans            &trans    &trans  &trans  &trans
             >;
         };
 
