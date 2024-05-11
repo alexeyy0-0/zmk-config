@@ -78,7 +78,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans          &kp STAR   &kp N7  &kp N8     &kp N9  &kp EQUAL               &kp HOME      &kp PG_DN     &kp PG_UP   &kp END        &kp LC(X)  &tog 1
+&tog 1          &kp STAR   &kp N7  &kp N8     &kp N9  &kp EQUAL               &kp HOME      &kp PG_DN     &kp PG_UP   &kp END        &kp LC(A)  &kp LC(X)
 &kp LEFT_SHIFT  &kp SLASH  &kp N4  &kp N5     &kp N6  &mt UNDERSCORE MINUS    &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT      &kp LC(C)  &kp LC(LS(C))
 &kp BACKSLASH   &kp N0     &kp N1  &kp N2     &kp N3  &mt LS(N6) SLASH        &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp LC(RIGHT)  &kp LC(V)  &kp LC(LS(V))
                                    &kp ENTER  &trans  &trans                  &trans        &trans        &trans
@@ -102,10 +102,10 @@
 
         layer_3 {
             bindings = <
-&kp LA(K_MUTE)   &kp F5      &kp LC(LS(T))  &kp LC(T)         &kp LC(W)         &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp C_VOLUME_UP  &kp C_NEXT  &trans         &kp LC(PG_UP)     &kp LC(PG_DN)     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp C_VOL_DN     &kp LC(F5)  &kp LC(LS(P))  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                            &trans            &trans            &trans    &trans  &trans  &trans
+&kp LA(K_MUTE)     &kp F5      &kp LC(LS(T))  &kp LC(T)         &kp LC(W)         &trans    &trans           &trans            &trans  &trans  &trans  &trans
+&kp C_VOLUME_DOWN  &kp C_NEXT  &trans         &kp LC(PG_UP)     &kp LC(PG_DN)     &trans    &kp K_VOLUME_UP  &kp K_VOLUME_UP2  &trans  &trans  &trans  &trans
+&kp C_VOLUME_UP    &kp LC(F5)  &kp LC(LS(P))  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &trans    &trans           &trans            &trans  &trans  &trans  &trans
+                                              &trans            &trans            &trans    &trans           &trans            &trans
             >;
         };
 
