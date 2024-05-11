@@ -63,10 +63,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&mt LC(Z) ESC  &mt GRAVE Q  &kp W  &kp E         &kp R      &kp T          &kp Y          &kp U        &kp I        &kp O    &kp P          &mt RBKT LBKT
-&kp LGUI       &kp A        &kp S  &kp D         &kp F      &kp G          &kp H          &mt RSHFT J  &kp K        &kp L    &kp SEMICOLON  &kp SQT
-&kp LCTRL      &kp Z        &kp X  &kp C         &kp V      &kp B          &kp N          &kp M        &kp COMMA    &kp DOT  &kp FSLH       &tog 1
-                                   &kp LEFT_ALT  &lt 1 TAB  &lt 3 SPACE    &kp BACKSPACE  &lt 2 DEL    &lt 5 ENTER
+&mt LC(Z) ESC  &mt GRAVE Q  &kp W  &kp E         &kp R      &kp T          &kp Y          &kp U      &kp I        &kp O    &kp P          &mt RBKT LBKT
+&kp LGUI       &kp A        &kp S  &kp D         &kp F      &kp G          &kp H          &kp J      &kp K        &kp L    &kp SEMICOLON  &kp SQT
+&kp LCTRL      &kp Z        &kp X  &kp C         &kp V      &kp B          &kp N          &kp M      &kp COMMA    &kp DOT  &kp FSLH       &tog 1
+                                   &kp LEFT_ALT  &lt 1 TAB  &lt 2 SPACE    &kp BACKSPACE  &lt 3 DEL  &lt 5 ENTER
             >;
         };
 
@@ -78,10 +78,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LC(LEFT_SHIFT)  &kp STAR           &kp N7  &kp N8     &kp N9  &kp PLUS                &kp HOME      &kp PG_DN     &kp PG_UP   &kp END        &kp EQUAL  &tog 1
-&kp LSHIFT          &kp LS(BACKSLASH)  &kp N4  &kp N5     &kp N6  &mt UNDERSCORE MINUS    &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT      &kp LC(C)  &kp LC(LS(C))
-&kp LCTRL           &kp N0             &kp N1  &kp N2     &kp N3  &mt LS(N6) SLASH        &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp LC(RIGHT)  &kp LC(V)  &kp LC(LS(V))
-                                               &kp ENTER  &trans  &trans                  &trans        &trans        &trans
+&trans          &kp STAR   &kp N7  &kp N8     &kp N9  &kp EQUAL               &kp HOME      &kp PG_DN     &kp PG_UP   &kp END        &kp LC(X)  &tog 1
+&kp LEFT_SHIFT  &kp SLASH  &kp N4  &kp N5     &kp N6  &mt UNDERSCORE MINUS    &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT      &kp LC(C)  &kp LC(LS(C))
+&kp BACKSLASH   &kp N0     &kp N1  &kp N2     &kp N3  &mt LS(N6) SLASH        &kp LC(LEFT)  &kp LC(DOWN)  &kp LC(UP)  &kp LC(RIGHT)  &kp LC(V)  &kp LC(LS(V))
+                                   &kp ENTER  &trans  &trans                  &trans        &trans        &trans
             >;
         };
 
@@ -93,10 +93,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC         &none                  &kp AMPERSAND  &kp STAR      &kp LEFT_PARENTHESIS  &none      &kp PLUS   &kp SLASH              &kp BACKSLASH         &trans             &trans            &trans
-&kp LEFT_SHIFT  &trans                 &kp DOLLAR     &kp PERCENT   &kp LCTRL             &none      &kp MINUS  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &trans
-&kp LCTRL       &kp RIGHT_PARENTHESIS  &kp EXCL       &kp AT        &kp HASH              &none      &kp EQUAL  &kp RIGHT_BRACE        &kp LEFT_BRACE        &kp GREATER_THAN   &kp LESS_THAN     &trans
-                                                      &kp QUESTION  &kp COMMA             &kp DOT    &trans     &trans                 &trans
+&trans          &none                  &kp AMPERSAND  &kp STAR     &kp LEFT_PARENTHESIS  &none      &kp PIPE           &kp SLASH              &kp BACKSLASH         &kp AMPERSAND      &kp HASH          &trans
+&kp LEFT_SHIFT  &trans                 &kp DOLLAR     &kp PERCENT  &kp LCTRL             &none      &kp LA(SEMICOLON)  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &trans
+&kp LCTRL       &kp RIGHT_PARENTHESIS  &kp EXCL       &kp AT       &kp HASH              &none      &kp COLON          &kp RIGHT_BRACE        &kp LEFT_BRACE        &kp GREATER_THAN   &kp LESS_THAN     &trans
+                                                      &none        &trans                &kp DOT    &kp COMMA          &kp DOT                &kp QUESTION
             >;
         };
 
