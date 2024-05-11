@@ -66,7 +66,7 @@
 &mt LC(Z) ESC  &mt GRAVE Q  &kp W  &kp E         &kp R      &kp T          &kp Y          &kp U      &kp I        &kp O    &kp P          &mt RBKT LBKT
 &kp LGUI       &kp A        &kp S  &kp D         &kp F      &kp G          &kp H          &kp J      &kp K        &kp L    &kp SEMICOLON  &kp SQT
 &kp LCTRL      &kp Z        &kp X  &kp C         &kp V      &kp B          &kp N          &kp M      &kp COMMA    &kp DOT  &kp FSLH       &tog 1
-                                   &kp LEFT_ALT  &lt 1 TAB  &lt 2 SPACE    &kp BACKSPACE  &lt 3 DEL  &lt 5 ENTER
+                                   &kp LEFT_ALT  &lt 1 TAB  &lt 2 SPACE    &kp BACKSPACE  &lt 3 DEL  &lt 4 ENTER
             >;
         };
 
@@ -102,15 +102,6 @@
 
         layer_3 {
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8  &kp F9  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
 &kp LA(K_MUTE)   &kp F5      &kp LC(LS(T))  &kp LC(T)         &kp LC(W)         &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &kp C_VOLUME_UP  &kp C_NEXT  &trans         &kp LC(PG_UP)     &kp LC(PG_DN)     &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &kp C_VOL_DN     &kp LC(F5)  &kp LC(LS(P))  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
@@ -118,12 +109,12 @@
             >;
         };
 
-        layer_5 {
+        layer_4 {
             bindings = <
-&trans  &trans         &trans         &trans         &trans         &trans           &trans  &trans  &trans  &trans  &trans  &bt BT_CLR
-&trans  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &trans  &trans  &trans  &trans  &trans  &trans
-                                      &trans         &trans         &trans           &trans  &trans  &trans
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &none     &trans         &trans         &trans         &trans         &trans         &bt BT_CLR
+&trans  &kp F11  &kp F4  &kp F5  &kp F6  &none     &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &trans
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &none     &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &trans
+                         &trans  &trans  &trans    &trans         &trans         &trans
             >;
         };
     };
