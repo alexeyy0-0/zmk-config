@@ -54,7 +54,7 @@
         dot_ru: dot_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LEFT_SHIFT) &kp LS(SLASH) &kp LA(LEFT_SHIFT)>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp LS(NUMBER_3) &kp LA(LEFT_SHIFT)>;
             label = "DOT_RU";
         };
     };
