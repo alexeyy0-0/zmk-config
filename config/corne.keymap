@@ -50,6 +50,13 @@
             bindings = <&kp SLASH &kp SPACE &sk LSHFT>;
             label = "DOT_SPACE_SHIFT";
         };
+
+        dot_ru: dot_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &kp LS(SLASH) &kp LA(LEFT_SHIFT)>;
+            label = "DOT_RU";
+        };
     };
 
     keymap {
@@ -102,9 +109,9 @@
 
         layer_3 {
             bindings = <
-&kp LA(K_MUTE)     &kp F5      &kp LC(LS(T))  &kp LC(T)         &kp LC(W)         &trans    &trans           &trans            &trans  &trans  &trans  &trans
-&kp C_VOLUME_DOWN  &kp C_NEXT  &trans         &kp LC(PG_UP)     &kp LC(PG_DN)     &trans    &kp K_VOLUME_UP  &kp K_VOLUME_UP2  &trans  &trans  &trans  &trans
-&kp C_VOLUME_UP    &kp LC(F5)  &kp LC(LS(P))  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &trans    &trans           &trans            &trans  &trans  &trans  &trans
+&kp LA(K_MUTE)     &kp F5      &kp LC(LS(T))  &kp LC(T)         &kp LC(W)         &trans    &kp KP_DOT       &kp PERIOD        &kp DOT  &dot_ru  &trans  &trans
+&kp C_VOLUME_DOWN  &kp C_NEXT  &trans         &kp LC(PG_UP)     &kp LC(PG_DN)     &trans    &kp K_VOLUME_UP  &kp K_VOLUME_UP2  &trans   &trans   &trans  &trans
+&kp C_VOLUME_UP    &kp LC(F5)  &kp LC(LS(P))  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &trans    &trans           &trans            &trans   &trans   &trans  &trans
                                               &trans            &trans            &trans    &trans           &trans            &trans
             >;
         };
