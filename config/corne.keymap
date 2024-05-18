@@ -101,18 +101,18 @@
 
             bindings = <
 &trans          &none                  &kp AMPERSAND  &kp STAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PIPE       &kp SLASH              &kp BACKSLASH         &kp AMPERSAND      &kp HASH          &kp LC(S)
-&kp LEFT_SHIFT  &none                  &kp DOLLAR     &kp PERCENT  &kp LCTRL             &kp LC(C)                &kp SEMICOLON  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &trans
-&kp LCTRL       &kp RIGHT_PARENTHESIS  &kp EXCL       &kp AT       &kp HASH              &kp LC(V)                &kp COLON      &kp RIGHT_BRACE        &kp LEFT_BRACE        &kp GREATER_THAN   &kp LESS_THAN     &trans
-                                                      &none        &trans                &kp DOT                  &kp COMMA      &kp DOT                &kp QUESTION
+&kp LEFT_SHIFT  &none                  &kp DOLLAR     &kp PERCENT  &kp LCTRL             &kp LC(C)                &kp SEMICOLON  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &none
+&kp LCTRL       &kp RIGHT_PARENTHESIS  &kp EXCL       &kp AT       &kp HASH              &kp LC(V)                &kp COLON      &kp RIGHT_BRACE        &kp LEFT_BRACE        &kp GREATER_THAN   &kp LESS_THAN     &none
+                                                      &none        &trans                &trans                   &trans         &trans                 &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&kp LA(K_MUTE)     &kp F5      &kp LC(LS(T))  &kp LC(T)         &kp LC(W)         &trans    &kp KP_DOT       &kp PERIOD        &kp DOT  &dot_ru  &trans  &trans
-&kp C_VOLUME_DOWN  &kp C_NEXT  &trans         &kp LC(PG_UP)     &kp LC(PG_DN)     &trans    &kp K_VOLUME_UP  &kp K_VOLUME_UP2  &trans   &trans   &trans  &trans
-&kp C_VOLUME_UP    &kp LC(F5)  &kp LC(LS(P))  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &trans    &trans           &trans            &trans   &trans   &trans  &trans
-                                              &trans            &trans            &trans    &trans           &trans            &trans
+&kp LC(F5)  &kp F5  &kp LC(T)  &kp LC(W)      &kp LC(LS(T))  &trans    &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &kp C_NEXT      &none  &none  &kp C_AL_KEYBOARD_LAYOUT
+&none       &none   &none      &kp LC(PG_UP)  &kp LC(PG_DN)  &trans    &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp C_PAUSE     &none  &none  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
+&none       &none   &none      &kp LA(LEFT)   &kp LA(RIGHT)  &trans    &kp K_SCROLL_DOWN  &kp K_SCROLL_UP       &kp K_PREVIOUS  &none  &none  &none
+                               &trans         &trans         &trans    &trans             &trans                &trans
             >;
         };
 
