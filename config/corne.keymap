@@ -101,7 +101,7 @@
 
             bindings = <
 &trans          &none                  &kp AMPERSAND  &kp STAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp PIPE       &kp SLASH              &kp BACKSLASH         &kp AMPERSAND      &kp HASH          &kp LC(S)
-&kp LEFT_SHIFT  &none                  &kp DOLLAR     &kp PERCENT  &kp LCTRL             &kp LC(C)                &kp SEMICOLON  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &none
+&kp LEFT_SHIFT  &none                  &kp DOLLAR     &kp PERCENT  &kp CARET             &kp LC(C)                &kp SEMICOLON  &kp RIGHT_PARENTHESIS  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &none
 &kp LCTRL       &kp RIGHT_PARENTHESIS  &kp EXCL       &kp AT       &kp HASH              &kp LC(V)                &kp COLON      &kp RIGHT_BRACE        &kp LEFT_BRACE        &kp GREATER_THAN   &kp LESS_THAN     &none
                                                       &none        &trans                &trans                   &trans         &trans                 &trans
             >;
