@@ -122,9 +122,9 @@
 
         layer_3 {
             bindings = <
-&kp LC(F5)  &kp F5  &kp LC(T)  &kp LC(W)      &kp LC(LS(T))  &trans    &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &kp C_NEXT      &kp K_SCROLL_UP    &kp C_AC_SCROLL_UP    &kp C_AL_KEYBOARD_LAYOUT
-&none       &none   &none      &kp LC(PG_UP)  &kp LC(PG_DN)  &trans    &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp C_PAUSE     &kp K_SCROLL_DOWN  &kp C_AC_SCROLL_DOWN  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
-&none       &none   &none      &kp LA(LEFT)   &kp LA(RIGHT)  &trans    &kp K_MUTE         &none                 &kp K_PREVIOUS  &none              &none                 &none
+&kp LC(F5)  &kp F5  &kp LC(T)  &kp LC(W)      &kp LC(LS(T))  &none     &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &kp C_NEXT      &kp K_SCROLL_UP    &kp C_AC_SCROLL_UP    &kp C_AL_KEYBOARD_LAYOUT
+&none       &none   &none      &kp LC(PG_UP)  &kp LC(PG_DN)  &none     &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp C_PAUSE     &kp K_SCROLL_DOWN  &kp C_AC_SCROLL_DOWN  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
+&none       &none   &none      &kp LA(LEFT)   &kp LA(RIGHT)  &none     &kp C_MUTE         &none                 &kp K_PREVIOUS  &none              &none                 &none
                                &trans         &trans         &trans    &trans             &trans                &trans
             >;
         };
