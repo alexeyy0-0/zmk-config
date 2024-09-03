@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
     combos {
@@ -109,16 +110,16 @@
 
         layer_3 {
             bindings = <
-&kp LC(F5)  &kp F5  &kp LC(T)  &kp LC(W)      &kp LC(LS(T))  &trans    &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &kp C_NEXT      &none  &none  &kp C_AL_KEYBOARD_LAYOUT
-&none       &none   &none      &kp LC(PG_UP)  &kp LC(PG_DN)  &trans    &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp C_PAUSE     &none  &none  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
-&none       &none   &none      &kp LA(LEFT)   &kp LA(RIGHT)  &trans    &kp K_SCROLL_DOWN  &kp K_SCROLL_UP       &kp K_PREVIOUS  &none  &none  &none
+&kp LC(F5)  &kp F5  &kp LC(T)  &kp LC(W)      &kp LC(LS(T))  &trans    &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &kp C_NEXT      &kp K_SCROLL_UP    &kp C_AC_SCROLL_UP    &kp C_AL_KEYBOARD_LAYOUT
+&none       &none   &none      &kp LC(PG_UP)  &kp LC(PG_DN)  &trans    &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp C_PAUSE     &kp K_SCROLL_DOWN  &kp C_AC_SCROLL_DOWN  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT
+&none       &none   &none      &kp LA(LEFT)   &kp LA(RIGHT)  &trans    &kp K_MUTE         &none                 &kp K_PREVIOUS  &none              &none                 &none
                                &trans         &trans         &trans    &trans             &trans                &trans
             >;
         };
 
         layer_4 {
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8  &kp F9  &none     &tog 5         &trans         &trans         &trans         &trans         &bt BT_CLR
+&trans  &kp F12  &kp F7  &kp F8  &kp F9  &none     &tog 5         &soft_off      &out OUT_TOG   &trans         &trans         &bt BT_CLR
 &trans  &kp F11  &kp F4  &kp F5  &kp F6  &none     &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &trans
 &trans  &kp F10  &kp F1  &kp F2  &kp F3  &none     &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &trans
                          &trans  &trans  &trans    &trans         &trans         &trans
