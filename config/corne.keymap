@@ -13,7 +13,7 @@
     combos {
         compatible = "zmk,combos";
 
-        bottomesc {
+        button_esc {
             bindings = <&kp ESC>;
             key-positions = <0 11>;
         };
@@ -42,6 +42,11 @@
             bindings = <&dot_space_shift>;
             key-positions = <28 31>;
         };
+
+        comma {
+            bindings = <&comma_space>;
+            key-positions = <15 20>;
+        };
     };
 
     macros {
@@ -57,6 +62,13 @@
             #binding-cells = <0>;
             bindings = <&kp LA(LEFT_SHIFT) &kp LS(NUMBER_3) &kp LA(LEFT_SHIFT)>;
             label = "DOT_RU";
+        };
+
+        comma_space: comma_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(SLASH) &kp SPACE>;
+            label = "COMMA_SPACE";
         };
     };
 
